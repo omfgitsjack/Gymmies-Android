@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#272627"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+       	android:id="@+id/llcustomdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#272627"
+        android:layout_centerHorizontal="true" >
+        <TextView
+		        android:id="@+id/tvchoosestarttime3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+        		android:layout_centerHorizontal="true"
+        		android:layout_alignParentTop="true"
+		        android:text="Start time" 
+		        android:textAppearance="?android:attr/textAppearanceMedium"/>
+		    <TimePicker
+		        android:id="@+id/tpstarttime3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/tvchoosestarttime3"
+		        android:layout_centerHorizontal="true"
+		        />
+		     
+		     <TextView
+		        android:id="@+id/tvchooseendtime3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_below="@+id/tpstarttime3"
+		        android:text="End time" 
+		        android:textAppearance="?android:attr/textAppearanceMedium"/>
+		  
+		    <TimePicker
+		        android:id="@+id/tpendtime3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_below="@+id/tvchooseendtime3"
+		        />
+    </RelativeLayout>
+     <EditText
+	        android:id="@+id/etnumberofguests2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/llcustomdialog"
+	        android:layout_centerHorizontal="true"
+	        android:hint="Number of guests"
+	        android:ems="10" >
+	
+	        <requestFocus />
+	    </EditText>
+	    <EditText
+	        android:id="@+id/etmeetinglocation2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/etnumberofguests2"
+	        android:layout_centerHorizontal="true"
+	        android:hint="Meeting Location"
+	        android:ems="10" >
+	
+	        <requestFocus />
+	    </EditText>
+
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_below="@+id/etmeetinglocation2"
+	        android:weightSum="100">
+	       	<Button
+            android:id="@+id/btn_cancel"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+			android:layout_weight="50"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btn_join"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="Join" />
+	    </LinearLayout>
+        
+
+</RelativeLayout>
+</ScrollView>
+

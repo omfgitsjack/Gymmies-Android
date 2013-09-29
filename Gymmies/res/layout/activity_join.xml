@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/svactivity_join"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+    android:id="@+id/rlactivity_join"
+    android:layout_width="match_parent"
+    android:layout_height="428dp"
+    android:orientation="vertical" >
+	    
+       <LinearLayout
+      android:id="@+id/center_point"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:orientation="horizontal"
+      android:layout_centerInParent="true" >
+      </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/left_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+       android:orientation="horizontal"
+      android:layout_alignParentLeft="true"
+      android:layout_alignRight="@+id/center_point" >
+    </LinearLayout>
+
+
+    <LinearLayout
+      android:id="@+id/right_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentRight="true"
+       android:orientation="horizontal"
+      android:layout_alignLeft="@+id/center_point" >
+      </LinearLayout>  
+        
+    <TextView
+        android:id="@+id/tvavailability2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvdate"
+        android:text="Availability"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         />
+    
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvavailability2"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:id="@+id/llavailability2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+        
+		     <TextView
+		        android:id="@+id/tvchoosestarttime"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/scrollView2"
+        		android:layout_alignParentLeft="true"
+		        android:paddingLeft="20dp"
+		        android:text="Start time" 
+		        android:textAppearance="?android:attr/textAppearanceMedium"/>
+		    <TimePicker
+		        android:id="@+id/tpstarttime"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/tvchoosestarttime"
+		        
+		        />
+		     
+		     <TextView
+		        android:id="@+id/tvchooseendtime"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:paddingRight="20dp"
+		        android:layout_below="@+id/scrollView2"
+		        android:text="End time" 
+		        android:textAppearance="?android:attr/textAppearanceMedium"/>
+		  
+		    <TimePicker
+		        android:id="@+id/tpendtime"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/tvchooseendtime"
+		        android:layout_alignParentRight="true"
+		        android:paddingRight="20dp"
+		        />
+
+	    <EditText
+	        android:id="@+id/etnumberofguests"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/tpendtime"
+	        android:layout_centerHorizontal="true"
+	        android:hint="Number of guests"
+	        android:ems="10" >
+	
+	        <requestFocus />
+	    </EditText>
+	    <EditText
+	        android:id="@+id/etmeetinglocation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/etnumberofguests"
+	        android:layout_centerHorizontal="true"
+	        android:hint="Meeting Location "
+	        android:ems="10" >
+	
+	        <requestFocus />
+	    </EditText>
+	    
+	    <CheckBox
+	        android:id="@+id/cblookingformorepeople"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/etmeetinglocation"
+	        android:layout_centerHorizontal="true"
+	        android:text="Looking for more people" />
+	    <CheckBox
+	        android:id="@+id/cbprivateevent"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/cblookingformorepeople"
+	        android:layout_centerHorizontal="true"
+	        android:text="Private Event" />
+	    
+	    <Button
+	        android:id="@+id/btjoin"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/cbprivateevent"
+	        android:text="Join" />
+
+
+	    
+
+    </RelativeLayout>
+</ScrollView>
+    

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/svactivity_calendar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<RelativeLayout
+    android:id="@+id/rlactivity_calendar"
+    android:layout_width="match_parent"
+    android:layout_height="428dp"
+    android:orientation="vertical" >
+
+     <LinearLayout
+      android:id="@+id/center_point2"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:orientation="horizontal"
+      android:layout_centerInParent="true" >
+      </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/left_layout2"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+       android:orientation="horizontal"
+      android:layout_alignParentLeft="true"
+      android:layout_alignRight="@+id/center_point2" >
+    </LinearLayout>
+
+
+    <LinearLayout
+      android:id="@+id/right_layout2"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentRight="true"
+       android:orientation="horizontal"
+      android:layout_alignLeft="@+id/center_point2" >
+      </LinearLayout>  
+    
+    <TextView
+        android:id="@+id/tvactivityname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="activityname"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+    <TextView
+        android:id="@+id/tvlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvactivityname"
+        android:text="Location"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    
+    <TextView
+        android:id="@+id/tvdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvlocation"
+        android:text="description"
+       android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdescription"
+        android:layout_centerHorizontal="true"
+        android:text="date"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvavailability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvdate"
+        android:paddingTop="10dp"
+        android:text="Availability"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvavailability"      
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:id="@+id/llavailability"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+    
+    
+    <TextView
+        android:id="@+id/tvparticipants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/scrollView1"
+        android:paddingTop="10dp"
+        android:text="Participants"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvparticipants"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/llallparticipants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+            
+            <TextView
+	        android:id="@+id/tvgroups"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Groups" 
+	        android:layout_centerHorizontal="true"
+	        android:textAppearance="?android:attr/textAppearanceMedium"/>
+           <LinearLayout
+            android:id="@+id/llgroupparticipants"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvgroups"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            </LinearLayout>
+            
+           <TextView
+	        android:id="@+id/tvfriends"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/llgroupparticipants"
+	        android:text="Friends" 
+	        android:layout_centerHorizontal="true"
+	        android:textAppearance="?android:attr/textAppearanceMedium"/>
+           <LinearLayout
+            android:id="@+id/llfriendparticipants"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvfriends"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            </LinearLayout>
+            
+            <TextView
+	        android:id="@+id/tvnonfriends"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/llfriendparticipants"
+	        android:text="Non-Friends" 
+	        android:layout_centerHorizontal="true"
+	        android:textAppearance="?android:attr/textAppearanceMedium"/>
+           <LinearLayout
+            android:id="@+id/llnonfriendparticipants"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvnonfriends"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+            </LinearLayout>
+            
+        </RelativeLayout>
+    </ScrollView>
+    
+
+</RelativeLayout>
+
+</ScrollView>

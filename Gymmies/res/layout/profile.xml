@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvProgram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvYear"
+            android:layout_below="@+id/tvYear"
+            android:layout_marginTop="40dp"
+            android:text="Program"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="@+id/tvFirstname"
+            android:layout_alignRight="@+id/tvLastname"
+            android:layout_below="@+id/tvFirstname"
+            android:layout_marginTop="40dp"
+            android:text="Birthday"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvBirthday"
+            android:layout_alignRight="@+id/tvBirthday"
+            android:layout_below="@+id/tvBirthday"
+            android:layout_marginTop="39dp"
+            android:text="Year"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvProgram"
+            android:layout_alignRight="@+id/tvProgram"
+            android:layout_below="@+id/tvProgram"
+            android:layout_marginTop="40dp"
+            android:text="Gender"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/bCancel"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvStatus"
+            android:layout_marginTop="43dp"
+            android:text="Cancel" />
+
+        <TextView
+            android:id="@+id/etBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/etLastname"
+            android:layout_below="@+id/tvBirthday"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/etYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/etBirthday"
+            android:layout_below="@+id/tvYear"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/etProgram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvProgram"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/etGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvGender"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvStatus"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/etActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvActivity"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvGender"
+            android:layout_alignRight="@+id/tvGender"
+            android:layout_below="@+id/etGender"
+            android:layout_marginTop="15dp"
+            android:text="Activity"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvActivity"
+            android:layout_alignRight="@+id/tvActivity"
+            android:layout_below="@+id/etActivity"
+            android:layout_marginTop="18dp"
+            android:text="Status"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/bStatus"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_alignLeft="@+id/bActivity"
+            android:text="Edit"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/bActivity"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/etActivity"
+            android:layout_alignLeft="@+id/bGender"
+            android:text="Edit"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/bGender"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/etGender"
+            android:layout_alignLeft="@+id/bProgram"
+            android:text="Edit"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/bProgram"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/etProgram"
+            android:layout_alignLeft="@+id/bYear"
+            android:text="Edit"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/bYear"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/etYear"
+            android:layout_alignBottom="@+id/etYear"
+            android:layout_alignLeft="@+id/bBirthday"
+            android:text="Edit"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/bBirthday"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/etBirthday"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="42dp"
+            android:text="Edit"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/etFirstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvFirstname"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/bFirstname"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/etFirstname"
+            android:layout_alignLeft="@+id/bBirthday"
+            android:text="Edit"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/etLastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bLastname"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/bLastname"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/bFirstname"
+            android:layout_below="@+id/tvLastname"
+            android:text="Edit"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bCancel"
+            android:layout_alignRight="@+id/bActivity"
+            android:text="Save" />
+
+        <TextView
+            android:id="@+id/tvLastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/bCancel"
+            android:text="Lastname"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvFirstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvLastname"
+            android:layout_below="@+id/etLastname"
+            android:layout_marginTop="14dp"
+            android:text="Firstname"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

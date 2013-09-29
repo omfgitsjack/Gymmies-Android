@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#272627"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/llcustomdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvchoosestarttime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="20dp"
+            android:text="Start time"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TimePicker
+            android:id="@+id/tpstarttime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvchoosestarttime3" />
+
+        <TextView
+            android:id="@+id/tvchooseendtime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="20dp"
+            android:text="End time"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TimePicker
+            android:id="@+id/tpendtime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvchooseendtime3"
+            android:paddingRight="20dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etnumberofguests2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llcustomdialog"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Number of guests" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etmeetinglocation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etnumberofguests2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Meeting Location" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etmeetinglocation2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="#272627"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#444444"
+            android:clickable="true"
+            android:text="Cancel"
+            android:textColor="#33b5e5" />
+
+        <Button
+            android:id="@+id/btn_join"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="#444444"
+            android:clickable="true"
+            android:text="Join"
+            android:textColor="#33b5e5" />
+    </LinearLayout>
+
+</RelativeLayout>

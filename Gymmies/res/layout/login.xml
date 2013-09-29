@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+	
+        
+        <TextView
+            android:id="@+id/tvLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="100dp"
+            android:text="    UTSC\nGYMMIES"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+		<EditText
+            android:id="@+id/etUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="200dp"
+            android:ems="10"
+            android:hint="username" >
+        </EditText>
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="250dp"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:password="true" />
+
+        
+
+        <Button
+            android:id="@+id/bLogin"
+            style="@style/AppBaseTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/etUsername"
+            android:layout_alignTop="@+id/toggleButton1"
+            android:text="log in"
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etPassword"
+            android:layout_below="@+id/etPassword"
+            android:layout_marginTop="15dp"
+            android:checked="false"
+            android:textOff="show password"
+            android:textOn="hide password"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bSignup"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="New user? Join us!" />
+
+    </RelativeLayout>

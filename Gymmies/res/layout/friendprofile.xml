@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/vz1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bFav"
+        android:background="#ff106510" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/vz1"
+        android:gravity="center"
+        android:paddingTop="6dip"
+        android:paddingBottom="6dip"
+        android:paddingLeft="6dip"
+        android:text="Activity Feed"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/textView1"
+        android:background="#ff106510" />
+
+    <TextView
+        android:id="@+id/tvprofilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Tiger"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/FriendButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/tvprofilename"
+        android:layout_below="@+id/tvprofilename"
+         android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="6dip"
+        android:text="FriendButton"/>
+    
+   
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/edit_profile" />
+
+    <Button
+        android:id="@+id/bFav"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/FriendButton"
+        android:layout_below="@+id/FriendButton"
+        android:layout_marginTop="5dp"
+        android:text="Favourite Activities"/>
+
+    <ListView
+        android:id="@+id/actfeedview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerInParent="true" >
+    </ListView>
+
+</RelativeLayout>

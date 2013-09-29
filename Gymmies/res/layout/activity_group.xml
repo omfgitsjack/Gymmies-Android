@@ -1,0 +1,165 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    	    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<RelativeLayout 
+
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    tools:context=".Group" >
+	    
+	   <LinearLayout
+	      android:id="@+id/center_point2"
+	      android:layout_width="0dp"
+	      android:layout_height="0dp"
+	      android:orientation="horizontal"
+	      android:layout_centerInParent="true" >
+	      </LinearLayout>
+	
+	    <LinearLayout
+	      android:id="@+id/left_layout2"
+	      android:layout_width="match_parent"
+	      android:layout_height="match_parent"
+	       android:orientation="horizontal"
+	      android:layout_alignParentLeft="true"
+	      android:layout_alignRight="@+id/center_point2" >
+	    </LinearLayout>
+	
+	
+	    <LinearLayout
+	      android:id="@+id/right_layout2"
+	      android:layout_width="match_parent"
+	      android:layout_height="match_parent"
+	      android:layout_alignParentRight="true"
+	      android:orientation="horizontal"
+	      android:layout_alignLeft="@+id/center_point2" >
+	      </LinearLayout>  
+	    
+	    <TextView
+	        android:id="@+id/tvgroupname3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	         android:layout_alignParentTop="true"
+	        android:text="Group Name"
+	       android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    <TextView
+	        android:id="@+id/tvactivityname2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	       
+	        android:layout_centerHorizontal="true"
+	        android:text="activityname2"
+	        android:layout_below="@+id/tvgroupname3"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+	    <TextView
+	        android:id="@+id/tvlocation2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/tvactivityname2"
+	        android:text="Location"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+	    
+	    <TextView
+	        android:id="@+id/tvdescription2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/tvlocation2"
+	        android:text="description"
+	       android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <TextView
+	        android:id="@+id/tvdateandtime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/tvdescription2"
+	        android:layout_centerHorizontal="true"
+	        android:paddingTop="10dp"
+	        android:text="Date and Time"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	    <TextView
+	        android:id="@+id/tvdate2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/tvdateandtime"
+	        android:layout_centerHorizontal="true"
+	        android:text="date"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+	    <TextView
+	        android:id="@+id/tvtime2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/tvdate2"
+	        android:layout_centerHorizontal="true"
+	        android:text="time"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+	    <TextView
+	        android:id="@+id/tvparticipants2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/tvtime2"
+	        android:paddingTop="10dp"
+	        android:text="Participants"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <ScrollView
+	        android:id="@+id/scrollView4"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/tvparticipants2"
+	        android:layout_centerHorizontal="true">
+	        <RelativeLayout
+	            android:id="@+id/llallparticipants2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_centerHorizontal="true"
+	            android:orientation="vertical" >
+		        <LinearLayout
+		            android:id="@+id/llgroupparticipants2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:layout_centerHorizontal="true"
+		            android:orientation="vertical">
+		            
+		        </LinearLayout>
+	        </RelativeLayout>
+	    </ScrollView>
+	     <Button
+	            android:id="@+id/btjoin3"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/scrollView4"
+				android:layout_centerHorizontal="true"
+	            android:text="Join" />
+	     <Button
+	            android:id="@+id/btinvitefriends"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/btjoin3"
+	            android:layout_centerHorizontal="true"
+	            android:text="Invite Friends" />
+	     <Button
+	            android:id="@+id/btleavegroup"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/btinvitefriends"
+	            android:layout_centerHorizontal="true"
+	            android:text="Leave Group" />
+	</RelativeLayout>
+</ScrollView>
